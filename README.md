@@ -27,3 +27,41 @@ Face recognition is a core computer vision task with applications in security, a
 
 ## Project Structure
 
+Face-Recognition-Model/
+│
+├── Data_partition.ipynb # Dataset preprocessing and splitting
+├── Training.ipynb # CNN model definition and training
+├── data_generator.py # Custom data loading and augmentation logic
+├── README.md
+
+
+## Workflow
+
+1. **Data Preparation**
+   - Face images are organized and partitioned into training, validation, and test sets.
+   - Preprocessing includes resizing and normalization.
+
+2. **Model Training**
+   - A CNN is used to automatically extract facial features.
+   - The network is trained using supervised learning.
+
+3. **Evaluation**
+   - Model performance is evaluated on unseen test data.
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Ishan-Bhattacharya/Face-Recognition-Model.git
+   cd Face-Recognition-Model
+   
+2. Install dependencies:
+pip install tensorflow numpy opencv-python
+
+3. Run the notebooks in order:
+
+Data_partition.ipynb
+
+Training.ipynb
+
+
